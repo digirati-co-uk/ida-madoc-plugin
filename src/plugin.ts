@@ -1,4 +1,8 @@
 import '@madoc.io/types';
+import {MyTestBlock} from "./blocks/MyTestBlock";
+import {CustomCanvasHeader} from "./blocks/custom-ida-hero/custom-canvas-header";
+import {CustomManifestHeader} from "./blocks/custom-ida-hero/custom-manifest-header";
+import {IDAManifestMetadata} from "./blocks/metadata/metadata";
 
 export function hookRoutes() {
   return [
@@ -17,10 +21,13 @@ export function hookComponents() {
 }
 
 export function hookBlocks() {
-  // return {
-  //   MyTestBlock,
-  //   AllMaps,
-  // };
+  return {
+    MyTestBlock,
+    CustomCanvasHeader,
+    CustomManifestHeader,
+    IDAManifestMetadata
+    // AllMaps,
+  };
 }
 
 export const projectTemplates = [
