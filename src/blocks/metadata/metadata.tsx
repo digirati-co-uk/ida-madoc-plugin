@@ -3,7 +3,8 @@ import React, {useState} from 'react';
 import {Hooks} from "@madoc.io/types";
 import {MetaDataWrapper, MetaDataAccordian, Btn, MetaItemData, MetaItem, MetaLabel} from './metadata.style';
 import {LocaleString} from "@madoc.io/types";
-import { Database, ChevronDown } from '@styled-icons/entypo';
+import Database  from '../../icons/database';
+import ChevronDown from '../../icons/chevron-down';
 
 export function IDAManifestMetadata() {
     const {manifestId} = useRouteContext();
