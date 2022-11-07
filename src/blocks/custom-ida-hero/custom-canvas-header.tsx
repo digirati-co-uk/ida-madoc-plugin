@@ -13,7 +13,7 @@ export function CustomCanvasHeader(props: { subHeading?: string }) {
 
 
   if (!canvas?.id) {
-    return <HeroHeading>...</HeroHeading>;
+      return null;
   }
 
   return (

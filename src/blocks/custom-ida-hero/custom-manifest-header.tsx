@@ -11,7 +11,7 @@ export function CustomManifestHeader(props: { subHeading?: string }) {
   const manifest = manifestResponse?.manifest;
 
   if (!manifest?.id) {
-    return <HeroHeading>...</HeroHeading>;
+ return null;
   }
 
   return (

@@ -32,6 +32,7 @@ export const Btn = styled.button`
 
   svg {
     color: #0880aeff;
+    fill: #0880aeff;
     width: 25px;
     margin: 0 10px;
   }
@@ -61,6 +62,7 @@ export const MetaItem = styled.div`
     height: 18px;
     min-width: 18px;
     color: #0880ae;
+    fill:  #0880ae;
   }
 `;
 export const MetaItemData = styled.p`
