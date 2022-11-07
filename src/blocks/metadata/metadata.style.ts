@@ -1,0 +1,71 @@
+import styled from 'styled-components';
+
+export const MetaDataWrapper = styled.div<{ expanded: boolean }>`
+  border: 1px solid #002d4b;
+  color: #004761;
+  padding: 8px;
+
+  max-height: ${props => (props.expanded ? '2000px' : '50px')};
+  width: 50%;
+  transition: max-height 0.25s ease-in-out;
+  overflow: hidden;
+  margin-bottom: 30px;
+`;
+
+export const MetaDataAccordian = styled.div`
+  font-size: 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+`;
+
+export const Btn = styled.button`
+  vertical-align: middle;
+  margin-top: 5px;
+  border: none;
+  color: #004761;
+  background-color: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'IBM Plex Sans', sans-serif;
+
+  svg {
+    color: #0880aeff;
+    width: 25px;
+    margin: 0 10px;
+  }
+
+  :hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+`;
+
+export const MetaLabel = styled.p`
+  text-transform: capitalize;
+  color: #707070;
+  margin: 0 5px 8px 0;
+`;
+
+export const MetaItem = styled.div`
+  display: inline-flex;
+  white-space: nowrap;
+
+  p {
+    margin: 0 5px 8px 0;
+  }
+
+  svg {
+    margin-right: 5px;
+    height: 18px;
+    min-width: 18px;
+    color: #0880ae;
+  }
+`;
+export const MetaItemData = styled.p`
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;
