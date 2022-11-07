@@ -2,6 +2,7 @@ import '@madoc.io/types';
 import {CustomCanvasHeader} from "./blocks/custom-ida-hero/custom-canvas-header";
 import {CustomManifestHeader} from "./blocks/custom-ida-hero/custom-manifest-header";
 import {IDAManifestMetadata} from "./blocks/metadata/metadata";
+import {TopicHero} from "./blocks/custom-ida-hero/topic-hero";
 import {FeedbackBtn} from "./blocks/feedback-btn/feedback-btn";
 
 export function hookRoutes() {
@@ -25,6 +26,7 @@ export function hookBlocks() {
     CustomCanvasHeader,
     CustomManifestHeader,
     IDAManifestMetadata,
+    TopicHero,
     FeedbackBtn,
     // AllMaps,
   };

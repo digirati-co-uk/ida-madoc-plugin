@@ -1,6 +1,6 @@
 import { blockConfigFor } from "@madoc.io/types";
 import React from 'react';
-import { SubHeading, Divider, HeroHeading, Wrapper, Actions } from './custom-ida-hero.style';
+import { HeroText, Divider, HeroHeading, Wrapper, Actions } from './custom-ida-hero.style';
 import { LocaleString } from "@madoc.io/types";
 import { Hooks } from "@madoc.io/types";
 import { useRouteContext } from "@madoc.io/types";
@@ -30,7 +30,7 @@ export function CustomCanvasHeader(props: { subHeading?: string }) {
         </TextButton>
       </Actions>
       <Divider />
-      <SubHeading>{props.subHeading}</SubHeading>
+      <HeroText>{props.subHeading}</HeroText>
     </Wrapper>
   );
 }
