@@ -28,6 +28,7 @@ export const TxtBtn = styled.button<{ color?: string }>`
 
   svg {
     color: ${(props) => (props.color ? props.color : '#B1E0FF')};
+    fill: ${(props) => (props.color ? props.color : '#B1E0FF')};
     height: 18px;
     margin-right: 8px;
   }
