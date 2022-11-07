@@ -3,11 +3,14 @@ import React from 'react';
 import { SubHeading, Divider, HeroHeading, Wrapper, Actions } from './custom-ida-hero.style';
 import { LocaleString } from "@madoc.io/types";
 import { Hooks } from "@madoc.io/types";
+import { useRouteContext } from "@madoc.io/types";
 import {TextButton} from "../components/Button/Button";
 
 export function CustomCanvasHeader(props: { subHeading?: string }) {
-  const { data: canvasResponse } = Hooks.useApiCanvas();
-  const canvas = canvasResponse?.canvas;
+    const { canvasId } = useRouteContext();
+    const { data: canvasResponse } = Hooks.useApiCanvas(canvasId);
+    const canvas = canvasResponse?.canvas;
+
 
   if (!canvas?.id) {
     return <HeroHeading>...</HeroHeading>;

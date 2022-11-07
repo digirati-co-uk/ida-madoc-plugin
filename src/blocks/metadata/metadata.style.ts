@@ -1,16 +1,5 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 import styled from 'styled-components';
 
-const Theme = {
-  dark_blue: '#002D4B',
-  blue: '#B1E0FF',
-  light_blue: '#ECF5FC',
-  brown: '#894B2F',
-  light_brown: '#F5D8C0',
-  grey: '#707070',
-  sans: 'IBM Plex Sans, sans-serif',
-};
 export const MetaDataWrapper = styled.div<{ expanded: boolean }>`
   border: 1px solid #002d4b;
   color: #004761;
@@ -55,7 +44,7 @@ export const Btn = styled.button`
 
 export const MetaLabel = styled.p`
   text-transform: capitalize;
-  color: ${Theme.grey};
+  color: #707070;
   margin: 0 5px 8px 0;
 `;
 

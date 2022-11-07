@@ -1,4 +1,4 @@
-import { blockConfigFor } from "@madoc.io/types";
+import {blockConfigFor, useRouteContext} from "@madoc.io/types";
 import React from 'react';
 import { SubHeading, Divider, HeroHeading, Wrapper, Actions } from './custom-ida-hero.style';
 import { TextButton } from '../components/Button/Button';
@@ -6,7 +6,8 @@ import { Hooks } from "@madoc.io/types";
 import { LocaleString } from "@madoc.io/types";
 
 export function CustomManifestHeader(props: { subHeading?: string }) {
-  const { data: manifestResponse } = Hooks.useApiManifest();
+  const { manifestId } = useRouteContext();
+  const { data: manifestResponse } = Hooks.useApiManifest(manifestId);
   const manifest = manifestResponse?.manifest;
 
   if (!manifest?.id) {
