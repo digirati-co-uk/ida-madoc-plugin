@@ -17,7 +17,6 @@ const theme: MadocTheme = {
     },
     header: 'dark',
     fonts: 'default',
-    buttons: 'default',
     accent: 'default',
     siteContainer: 'default',
     footer: 'dark',
