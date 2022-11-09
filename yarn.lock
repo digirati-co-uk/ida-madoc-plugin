@@ -114,10 +114,10 @@
     uuid "^8.3.2"
     yargs "^17.0.1"
 
-"@madoc.io/types@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@madoc.io/types/-/types-0.1.1.tgz#77a584461deb4b2c8bdf2f7b590eb11d14ca7c67"
-  integrity sha512-BFXWpqTWRSo9kvVC9GTc0H9MolilR/c+gg2TDeObVZfqOS5UGA6RZZnb/6b8Yp3vtjBLFn7XRvSABiYqEo4y7A==
+"@madoc.io/types@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@madoc.io/types/-/types-0.2.0.tgz#e3c85483a8da86ebb41a08c9f3b1dd44ed432933"
+  integrity sha512-oJnscEHMWv0Vmsn/emHJdpi5bzI/wGc3wbdnuO3lQT6BcO3rCTBALT8+4feIze/u4GSFjJHOXSfqs5ZMN5zMBw==
   dependencies:
     "@types/react" "*"
     "@types/styled-components" "*"

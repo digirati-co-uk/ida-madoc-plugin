@@ -1,10 +1,11 @@
 import { MadocTheme } from "@madoc.io/types/dist/frontend/themes/definitions/types";
 
 const theme: MadocTheme = {
+  fonts: "default",
+  footer: "dark",
   header: 'default',
   global: 'default',
   accent: 'default',
-  footer: 'dark',
   siteContainer: 'dark',
   custom: {
     header: {
@@ -13,7 +14,7 @@ const theme: MadocTheme = {
     global: {
       maxWidth: '1200px',
     },
-  },
+  }
 };
 
 export const exampleTheme = {
