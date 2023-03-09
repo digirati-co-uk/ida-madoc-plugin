@@ -3,6 +3,7 @@ import {CustomCanvasHeader} from "./blocks/custom-ida-headings/custom-canvas-hea
 import {CustomManifestHeader} from "./blocks/custom-ida-headings/custom-manifest-header";
 import {IDAManifestMetadata} from "./blocks/metadata/metadata";
 import {FeedbackBtn} from "./blocks/feedback-btn/feedback-btn";
+import {DropdownNav} from "./blocks/custom-ida-nav/DropdownNav";
 import {idaTheme} from "./themes/ida-theme";
 import { TestPluginPage } from "./pages/test-plugin-page";
 
@@ -28,6 +29,7 @@ export function hookBlocks() {
     CustomManifestHeader,
     IDAManifestMetadata,
     FeedbackBtn,
+    DropdownNav,
     // AllMaps,
   };
 }
