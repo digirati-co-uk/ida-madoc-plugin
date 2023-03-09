@@ -1,6 +1,6 @@
 import {blockConfigFor, useRouteContext} from "@madoc.io/types";
 import React from 'react';
-import { HeroText, Divider, HeroHeading, Wrapper, Actions } from './custom-ida-hero.style';
+import { HeroText, Divider, HeroHeading, Wrapper, Actions } from './custom-ida-headings.style';
 import { TextButton } from '../components/Button/Button';
 import { Hooks } from "@madoc.io/types";
 import { LocaleString } from "@madoc.io/types";

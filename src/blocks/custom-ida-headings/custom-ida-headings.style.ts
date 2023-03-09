@@ -86,22 +86,3 @@ export const HeroText = styled.div`
   }
 `;
 
-export const HeroSubHeading = styled.p`
-  color: #002d4b;
-  font-size: 1.37em;
-  line-height: 30px;
-  font-weight: 500;
-`;
-
-export const HeroHeading2 = styled.h2`
-  color: #004761;
-  font-size: 1.75em;
-  line-height: 36px;
-  font-weight: 600;
-`;
-export const HeroSubHeading2 = styled.p`
-  color: #004761;
-  font-size: 1.25em;
-  line-height: 28px;
-  font-weight: 400;
-`;

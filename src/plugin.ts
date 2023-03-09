@@ -1,10 +1,9 @@
 import '@madoc.io/types';
-import {CustomCanvasHeader} from "./blocks/custom-ida-hero/custom-canvas-header";
-import {CustomManifestHeader} from "./blocks/custom-ida-hero/custom-manifest-header";
+import {CustomCanvasHeader} from "./blocks/custom-ida-headings/custom-canvas-header";
+import {CustomManifestHeader} from "./blocks/custom-ida-headings/custom-manifest-header";
 import {IDAManifestMetadata} from "./blocks/metadata/metadata";
-import {TopicHero} from "./blocks/custom-ida-hero/topic-hero";
-import {TopicAggHero} from "./blocks/custom-ida-hero/topic-agg-hero";
 import {FeedbackBtn} from "./blocks/feedback-btn/feedback-btn";
+import {DropdownNav} from "./blocks/custom-ida-nav/DropdownNav";
 import {idaTheme} from "./themes/ida-theme";
 
 export function hookRoutes() {
@@ -28,9 +27,8 @@ export function hookBlocks() {
     CustomCanvasHeader,
     CustomManifestHeader,
     IDAManifestMetadata,
-    TopicHero,
-    TopicAggHero,
     FeedbackBtn,
+    DropdownNav,
     // AllMaps,
   };
 }
