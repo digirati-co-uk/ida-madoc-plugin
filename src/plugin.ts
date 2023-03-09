@@ -5,15 +5,14 @@ import {IDAManifestMetadata} from "./blocks/metadata/metadata";
 import {FeedbackBtn} from "./blocks/feedback-btn/feedback-btn";
 import {DropdownNav} from "./blocks/custom-ida-nav/DropdownNav";
 import {idaTheme} from "./themes/ida-theme";
-import { TestPluginPage } from "./pages/test-plugin-page";
 
 export function hookRoutes() {
   return [
-    {
-      path: '/test-plugin',
-      component: TestPluginPage,
-      exact: true,
-    },
+    // {
+    //   path: '/test-plugin',
+    //   component: TestPluginPage,
+    //   exact: true,
+    // },
   ];
 }
 

@@ -131,7 +131,8 @@ export const DropdownNav: React.FC<{
                 <div>
                     <NavHeader>{t('Menu')}</NavHeader>
                     <NavWrapper>
-                        <GlobalSiteNavigation showHomepageMenu={showHomepageMenu} extraNavItems={newNavItems} />
+                        {/*extraNavItems={newNavItems*/}
+                        <GlobalSiteNavigation showHomepageMenu={showHomepageMenu} />
                     </NavWrapper>
                 </div>
 
@@ -149,8 +150,8 @@ export const DropdownNav: React.FC<{
 };
 
 blockEditorFor(DropdownNav, {
-    type: 'default.DropDownMenu',
-    label: 'Dropdown menu)',
+    type: 'default.DropdownNav',
+    label: 'IDA Custom Dropdown Nav',
     defaultProps: {
         showHomepageMenu: false,
         slug1: '',
