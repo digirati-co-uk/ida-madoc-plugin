@@ -11,7 +11,7 @@
     "start": "madoc-bundler --watch",
     "build": "NODE_ENV=production madoc-bundler"
   },
-  "repository": "https://github.com/stephenwf/madoc-example-plugin",
+  "repository": "https://github.com/digirati-co-uk/ida-madoc-plugin",
   "madoc": {
     "id": "6f6bd1de-ce62-4818-a764-280747118be3",
     "name": "IDA plugin",
