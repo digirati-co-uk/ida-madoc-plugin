@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { blockEditorFor } from '@madoc.io/types/dist/extensions/page-blocks/block-editor-react';
 import { GlobalSiteNavigation } from '@madoc.io/types/dist/frontend/site/features/GlobalSiteNavigation';
-import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
 import { useBrowserLayoutEffect } from '@madoc.io/types/dist/frontend/shared/hooks/use-browser-layout-effect';
 import { Close } from '../../icons/close';
 
 const DropdownMenuWrapper = styled.div``;
-
 const MenuButton = styled.button`
   background-color: transparent;
   border: none;
@@ -32,7 +30,6 @@ const MenuButton = styled.button`
     }
   }
 `;
-
 const DropdownContainer = styled.div`
   height: 0;
   overflow: hidden;
@@ -78,7 +75,6 @@ const NavWrapper = styled.div`
     margin: 0.5em 0;
   }
 `;
-
 const CloseBtn = styled.button`
   align-self: start;
   border: none;
@@ -101,6 +97,7 @@ const CloseBtn = styled.button`
     margin-right: 0.5em;
   }
 `;
+
 export const DropdownNav: React.FC<{
     showHomepageMenu?: boolean;
     newNavItems?: {
@@ -109,7 +106,6 @@ export const DropdownNav: React.FC<{
     }[];
 }> = ({ showHomepageMenu, newNavItems }) => {
     const [open, setOpen] = useState(false);
-    const { t } = useTranslation();
 
     const location = useLocation();
     useBrowserLayoutEffect(() => {
@@ -124,13 +120,14 @@ export const DropdownNav: React.FC<{
                     setOpen(!open);
                 }}
             >
-                {t('Menu')}
+               Menu
             </MenuButton>
 
             <DropdownContainer data-is-open={open}>
                 <div>
-                    <NavHeader>{t('Menu')}</NavHeader>
+                    <NavHeader>Menu</NavHeader>
                     <NavWrapper>
+                        {/*Todo put this in when madoc pr merged */}
                         {/*extraNavItems={newNavItems*/}
                         <GlobalSiteNavigation showHomepageMenu={showHomepageMenu} />
                     </NavWrapper>
