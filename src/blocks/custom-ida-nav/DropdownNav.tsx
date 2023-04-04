@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { blockEditorFor } from '@madoc.io/types/dist/extensions/page-blocks/block-editor-react';
-import { GlobalSiteNavigation } from '@madoc.io/types/dist/frontend/site/features/GlobalSiteNavigation';
+import { blockConfigFor } from '@madoc.io/types';
+// @ts-ignore
+import { GlobalSiteNavigation } from '@madoc.io/types';
 import { useLocation } from 'react-router-dom';
-import { useBrowserLayoutEffect } from '@madoc.io/types/dist/frontend/shared/hooks/use-browser-layout-effect';
+// @ts-ignore
+import { useBrowserLayoutEffect } from '@madoc.io/types';
 import { Close } from '../../icons/close';
 
 const DropdownMenuWrapper = styled.div``;
@@ -146,7 +148,7 @@ export const DropdownNav: React.FC<{
     );
 };
 
-blockEditorFor(DropdownNav, {
+blockConfigFor(DropdownNav, {
     type: 'default.DropdownNav',
     label: 'IDA Custom Dropdown Nav',
     defaultProps: {
