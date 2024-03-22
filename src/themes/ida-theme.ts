@@ -5,6 +5,7 @@ const theme: MadocTheme = {
         header: {
             headerBackground: '#002d4b',
             headerText: 'white',
+            searchBorder: '#B1E0FF',
         },
         footer: {
             background: '#002d4b',
@@ -14,6 +15,10 @@ const theme: MadocTheme = {
         fonts: {
             fontFamily: "'IBM Plex Sans', sans-serif",
         },
+        accent: {
+            primary:  '#B1E0FF',
+            secondary:  '#B1E0FF',
+        }
     },
     header: 'dark',
     fonts: 'default',
